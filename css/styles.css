@@ -1,19 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap');
-
+:root {
+--bg-black:black ;
+--color-primary: darkgreen;
+--white:whitesmoke;
+}
 * { 
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;}
     html, body{
-        background-color: black;
-    }
+        background-color: var(--bg-black); }
+
+        h1, h2, h3,h4,h5,h6{margin:0}
     nav {
         display: flex; align-items: center;
         justify-content: space-between;    }
 
-    header{background-color: darkgreen;
-      color: whitesmoke;
+        nav h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        nav a {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    header{background-color: var(--color-primary);
+      color: var(--white);
+      height: 60px;
+      display: flex;
+      align-items: center;
     }
+
     a, a:hover { text-decoration: none;
         color: unset;
-    
+    }
+    .DSMovie-contact-container {
+        display: flex;
+        align-items: center;
+    }
+    .DSMovie-contact-container img {
+    margin-right: 10px;
     }
