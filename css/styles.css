@@ -179,7 +179,7 @@
    .DSMovie-pagination-box button {
        width: 40px;
        height: 40px;
-       border: 2px solid var(--color-primary);
+       border: 1px solid var(--color-primary);
        border-radius: 4px;
        background-color: var(--white);
        display: flex;
@@ -187,7 +187,7 @@
        align-items: center;
    }
    .DSMovie-pagination-box button:disabled {
-       border: 2px solid var(--text-color) ;
+       border: 1px solid var(--text-color) ;
    }
    .DSMovie-pagination-box button:disabled img {
        filter: unset;
