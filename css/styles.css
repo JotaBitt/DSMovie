@@ -47,7 +47,7 @@
    }
 
    #DSMovie-card-list {
-       padding: 40px 10px;
+       padding: 0px 10px;
    }
 
    .DSMovie-card {
@@ -152,3 +152,47 @@
        align-items: center;
        justify-content: space-between;
    }  
+   .DSMovie-pagination-container {
+       padding: 15px 0;
+       display: flex;
+       justify-content: center;
+    
+   }
+   .DSMovie-pagination-box {
+       display: flex;
+       width: 180px;
+       justify-content: space-between;
+       align-items: center;
+   }
+   .DSMovie-pagination-box p {
+       margin: 0;
+       font-size: 14px;
+       color: var(--color-primary);
+       font-weight: 400;
+   }
+    .DSMovie-pagination-box button img {
+
+       filter:  brightness(0) saturate(100%) invert(21%) sepia(47%) saturate(3355%) hue-rotate(102deg) brightness(94%) contrast(103%);
+
+}
+
+   .DSMovie-pagination-box button {
+       width: 40px;
+       height: 40px;
+       border: 2px solid var(--color-primary);
+       border-radius: 4px;
+       background-color: var(--white);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .DSMovie-pagination-box button:disabled {
+       border: 2px solid var(--text-color) ;
+   }
+   .DSMovie-pagination-box button:disabled img {
+       filter: unset;
+   }
+
+   .DSMovie-flip-horizontal {
+       transform: rotate(180deg);
+   }
